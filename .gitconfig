@@ -1,0 +1,26 @@
+[user]
+	name = Sylvain Bellemare
+	email = sbellem@gmail.com
+[merge]
+	tool = vimdiff
+[core]
+	excludesfile = /Users/sylvain/.gitignore_global
+	editor = vim
+	# Handle umlauts and such better on OS X
+	precomposeunicode = false
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	pager = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
